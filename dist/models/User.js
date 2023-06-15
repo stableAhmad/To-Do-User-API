@@ -15,7 +15,7 @@ const prisma = new client_1.PrismaClient();
 function getUser(email) {
     return __awaiter(this, void 0, void 0, function* () {
         const user = yield prisma.user.findUnique({
-            where: { email },
+            where: { email: email },
         });
         return user;
     });
