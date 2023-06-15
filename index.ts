@@ -3,7 +3,7 @@ import { userRouter } from "./routes/router";
 
 import { Express, Request, Response } from "express";
 
-const PORT: number = 5000;
+const PORT = process.env.PORT || 5000;
 
 const app: Express = express();
 
